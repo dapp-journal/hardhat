@@ -1,9 +1,12 @@
 # hardhat
 
-## 编译合约
+## 调试合约
 ```bash
-npx hardhat compile
+npx hardhat test
 ```
+
+调试合约会自动编译
+
 
 ## 部署到本地测试链
 
@@ -16,6 +19,6 @@ npx hardhat node
 2. 部署
 
 ```bash
-npx hardhat run scripts/deploy.js --network localhost
+npx hardhat ignition deploy ./ignition/modules/KeywordManager.ts --network localhost
 ```
 

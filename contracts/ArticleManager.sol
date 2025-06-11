@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract ArticleRegistry {
+contract ArticleManager {
     struct Article {
         address author;
         string title;
-        string contentHash;
+        string content;
         uint256 timestamp;
     }
 
