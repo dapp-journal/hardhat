@@ -55,6 +55,7 @@ describe("KeywordManager", function () {
         expect(await sol.read.getTotal()).to.equal(1n);
         await sol.write.add(['test2']);
         expect(await sol.read.getTotal()).to.equal(2n);
+        expect(await sol.read.getList()).to.have.lengthOf(2);
       });
     });
 

@@ -22,6 +22,10 @@ contract KeywordManager {
         emit keywordAdded(keywords.length - 1, msg.sender);
     }
 
+    function getList() public view returns (Keyword[] memory) {
+        return keywords;
+    }
+
     function get(uint _index) public view returns (Keyword memory) {
         return keywords[_index];
     }
